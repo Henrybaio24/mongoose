@@ -1,0 +1,15 @@
+.contorno {
+    width: 800px;
+    padding: 10px;
+    position: relative;
+    left: 300px;
+    border: 1.5px solid;
+    top: 5px;
+    margin-bottom: 40px;
+}
+
+.centrar {
+    position: relative;
+    left: 70px;
+    font-size: 20px;
+}

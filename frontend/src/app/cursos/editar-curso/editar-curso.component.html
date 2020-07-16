@@ -1,0 +1,21 @@
+<div class="mt-5 contorno rounded">
+  <form class="card-body border border-light" [formGroup]="editarCursoForm">
+    <div class="form-group">
+      <label class="block text-sm">Nombre</label>
+      <input class="form-control" formControlName="nombre" type="text" placeholder="Nombre" />
+    </div>
+    <div class="form-group">
+      <label class="block text-sm">Jornada</label>
+      <input class="form-control" formControlName="jornada" type="text" placeholder="Jornada" />
+    </div>
+    <div class="form-group">
+      <label class="block text-sm">Descripcion</label>
+      <input class="form-control" formControlName="descripcion" type="text" placeholder="Descripcion" />
+    </div>
+    <div class="mt-4">
+      <button class="btn btn-success" type="submit" (click)="actualizar()">
+        Actualizar
+      </button>
+    </div>
+  </form>
+</div>

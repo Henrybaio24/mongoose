@@ -1,0 +1,63 @@
+<div class="mt-5 contorno rounded">
+    <form
+      class="card-body border border-light"
+      [formGroup]="crearUsuarioForm"
+    >
+      <div class="form-group">
+        <label class="block text-sm">Nombre</label>
+        <input
+          class="form-control"
+          formControlName="nombre"
+          type="text"
+          placeholder="Nombre"
+        />
+      </div>
+      <div class="form-group">
+        <label class="block text-sm">Apellido</label>
+        <input
+          class="form-control"
+          formControlName="apellido"
+          type="text"
+          placeholder="Apellido"
+        />
+      </div>
+      <div class="form-group">
+        <label class="block text-sm">Email</label>
+        <input
+          class="form-control"
+          formControlName="email"
+          type="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="form-group">
+        <label class="block text-sm">Password</label>
+        <input
+          class="form-control"
+          formControlName="password"
+          type="password"
+          placeholder="Password"
+        />
+      </div>
+      <div class="form-group">
+        <label class="block text-sm">Imagen</label>
+        <input
+          class="form-control"
+          type="file"
+          formControlName="imagen"
+          #userpic
+          (change)="enviarArchivo($event)"
+          placeholder="Imagen"
+        />
+      </div>
+      <div class="mt-4">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          (click)="registrarUsuario()"
+        >
+          Guardar
+        </button>
+      </div>
+    </form>
+  </div>

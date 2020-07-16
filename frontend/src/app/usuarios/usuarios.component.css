@@ -1,0 +1,16 @@
+
+.titulo {
+    float: left;
+    margin: 40px;
+}
+
+.crear {
+    float: left;
+    margin: 50px 15px;
+}
+
+.tabla {
+    top: 100px;
+    position: relative;
+    
+}
